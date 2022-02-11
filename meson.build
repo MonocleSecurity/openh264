@@ -84,7 +84,7 @@ if ['linux', 'android', 'ios', 'darwin'].contains(system)
     add_project_arguments('-DHAVE_NEON', language: 'c')
     add_project_arguments('-DHAVE_NEON', language: 'c')
     casm_inc = include_directories(join_paths('codec', 'common', 'arm'))
-  elif cpu_family == 'arm71'
+  elif cpu_family == 'armv71'
     asm_format = asm_format32
     add_project_arguments('-DHAVE_NEON', language: 'c')
     add_project_arguments('-DHAVE_NEON', language: 'c')
